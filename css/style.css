@@ -1,4 +1,9 @@
 
+.body{
+background-color: #91ff00;
+border-color: #3300ff;
+}	
+}
 .container{
 	display: flex;
 	flex-direction: row;
@@ -8,10 +13,10 @@
     flex: right;
 	flex: 1;
 }
-.picture{
+.image{
+	background-color: rgb(249, 255, 240);
 
     flex: left;
-	padding: auto;
 }
 
 @media (max-width: 500px) {
@@ -36,9 +41,10 @@
 
 		.container {
 			flex-direction:column;
-			display: flex;
+			display: block;
 		 }
 		   .image{
+			;
 		 flex: auto;
 		   }
 			.info {
@@ -46,9 +52,9 @@
 				border: 1px solid;
 				flex: 1;
 			}
-		.companyName {
+		.info {
           border: 1px solid;
-		  padding-left: 100px;
+		  padding-right: 600px;
 		}
 	 }
 		
@@ -56,15 +62,12 @@
 
 			.container {
 			   flex-direction:row;
-			   display: flex;
+			   display:flex;
 			
-			}
-		      .image{
-			
-			  }
 			   .info {
 				display: flex;
 				   flex: 1;
+				   
 	
 			   }
 		   
