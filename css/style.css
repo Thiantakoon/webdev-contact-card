@@ -1,60 +1,66 @@
 
-.body{
-background-color: #91ff00;
-border-color: #3300ff;
-}	
+	
+.body {
+
 }
+
 .container{
+	background-color: #3300ff;
+
 	display: flex;
 	flex-direction: row;
+	flex:1;
 }
 
 .info{
     flex: right;
 	flex: 1;
 }
-.image{
-	background-color: rgb(249, 255, 240);
-
+.contactImage{
+background-color: rgb(255, 240, 254);
+position:relative;
     flex: left;
 }
 
 @media (max-width: 500px) {
 
+	
  .container {
 	flex-direction: column;
 	display: flex;
+	
  }
-	.infoDetails .companyName {
-		border: 1px solid;
-		flex: 1;
-		width: 40%;
-		border-radius: 0.6rem;
-		margin: 10;
+	
 	}
 	.companyName{
-		border: 1px solid;
-		padding-left: 10px;
+		
+		
 	}
 }
 	@media (min-width: 500px) {
 
 		.container {
+			border: #3300ff;
 			flex-direction:column;
 			display: block;
 		 }
-		   .image{
-			;
+		
+		.contactImage{
+			
 		 flex: auto;
+		 margin-left: 250;
 		   }
 			.info {
 			 display: flex;
+			 flex-direction: column;
 				border: 1px solid;
 				flex: 1;
 			}
 		.info {
-          border: 1px solid;
+          
 		  padding-right: 600px;
+		  flex-direction: column;
+		  float: right;
 		}
 	 }
 		
